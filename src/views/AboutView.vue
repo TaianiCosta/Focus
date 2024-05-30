@@ -1,6 +1,21 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <WelcomeItem>
+      <h2>E-mail</h2>
+
+      <input type="text" v-model="inputValue" placeholder="Digite seu Email..." />
+    </WelcomeItem>
+
+    <WelcomeItem>
+      <h2>Senha</h2>
+
+      <input type="text" v-model="inputValue" placeholder="Digite sua senha..." />
+    </WelcomeItem>
+
+    <WelcomeItem>
+      <h2>.</h2>
+      <button @click="submitInput">Entrar</button>
+    </WelcomeItem>
   </div>
 </template>
 
